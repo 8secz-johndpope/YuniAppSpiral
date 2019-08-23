@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1091119748925",
+    "firebase_url": "https://yuni-9ae60.firebaseio.com",
+    "project_id": "yuni-9ae60",
+    "storage_bucket": "yuni-9ae60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091119748925:android:98c0f99a0923aeee",
+        "android_client_info": {
+          "package_name": "com.android.yuniapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091119748925-hb8btbit0amke3gu81em23eejk1l7jaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.yuniapp",
+            "certificate_hash": "f5cd395b5d20492473df4e9bbef18f4e24cd1b9c"
+          }
+        },
+        {
+          "client_id": "1091119748925-munn6putsel1cfub1qjniericd73e88q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKJ4UB69qoiVl-SYyOvpJZKtU2E-cmmnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091119748925-munn6putsel1cfub1qjniericd73e88q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1091119748925-unvlsgvhajm7m7fcbmsfmlttpc7vnu0j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.agicent.YuniApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

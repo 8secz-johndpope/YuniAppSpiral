@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/img_notch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/layout_top"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/notch_icon" />
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_notch"
+        android:background="#EDEDED">
+
+        <ImageView
+            android:id="@+id/img_prev_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/calendar_arrow_left" />
+
+        <TextView
+            android:id="@+id/txt_current_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="April 2016"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/img_next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/calendar_arrow_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:background="#EDEDED"
+        android:paddingBottom="@dimen/_4sdp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SUN"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="MON"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TUE"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="WED"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="THU"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="FRI"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SAT"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_weekdays"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:columnWidth="@dimen/_10sdp"
+        android:gravity="center"
+        android:numColumns="7"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/_2sdp" />
+</RelativeLayout>

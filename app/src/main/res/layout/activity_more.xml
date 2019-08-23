@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MoreActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar_home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_medium"
+            android:text="Guide"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/txt_how_it_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/chevron_icon"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/how_it_works"
+            android:textColor="@color/txt_color_normal"
+            android:background="?selectableItemBackground"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/txt_tutorial_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/chevron_icon"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/tutorial_video"
+            android:textColor="@color/txt_color_normal"
+            android:background="?selectableItemBackground"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_medium"
+            android:text="Legal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/txt_tos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/chevron_icon"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="?selectableItemBackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/tos"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/txt_pp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/chevron_icon"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/pp"
+            android:background="?selectableItemBackground"
+            android:textColor="@color/txt_color_normal"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/txt_color_normal"/>
+
+</RelativeLayout>

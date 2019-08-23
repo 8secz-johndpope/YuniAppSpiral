@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="define_QuickAction"></string>
+  <string name="library_QuickAction_author">Blast Piruin Panichphol</string>
+  <string name="library_QuickAction_authorWebsite">https://piruin.me</string>
+  <string name="library_QuickAction_libraryName">QuickAction</string>
+  <string name="library_QuickAction_libraryDescription">Quick Action is a small android library for easy create Tooltips with some action or just as decoration. Original by http://www.londatiga.net/</string>
+  <string name="library_QuickAction_libraryVersion">2</string>
+  <string name="library_QuickAction_libraryWebsite">https://piruin.me/quickaction</string>
+  <string name="library_QuickAction_licenseId">apache_2_0</string>
+  <string name="library_QuickAction_isOpenSource">true</string>
+  <string name="library_QuickAction_repositoryLink">https://github.com/piruin/quickaction</string>
+  <string name="library_QuickAction_classPath">me.piruin.quickaction</string>
+</resources>

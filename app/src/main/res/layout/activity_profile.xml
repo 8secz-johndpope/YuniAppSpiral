@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar_home" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:riv_border_color="#EBEBEB"
+                app:riv_border_width="@dimen/_4sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_placeholder"
+                app:riv_oval="true" />
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:hint="@string/name"
+                android:inputType="textNoSuggestions|textPersonName|textCapWords"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/teko_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@+id/img_profile"
+                android:textColorHint="@color/hint_color"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_user_name"
+                android:layout_centerHorizontal="true"
+                android:text="johance.burge@gmail.com"
+                android:textColor="#A4A4A4"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:id="@+id/layout_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Date of Birth"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/edt_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="Select Date of Birth"
+                    android:textColor="@color/txt_color_normal"
+                    android:editable="false"
+                    android:inputType="textNoSuggestions"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_dob"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Gender"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/edt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="@string/select_gender"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/txt_color_normal"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_gender"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="top|left"
+                    android:hint="@string/add"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/txt_color_normal"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_automatic_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_add"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/teko_medium"
+                        android:text="Automatic Quote"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_automatic_quote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:theme="@style/SwitchTheme"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add My Own Quote"
+                        android:textColor="#65748E"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:id="@+id/edt_own_quote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edittext_border_default"
+                        android:gravity="top|left"
+                        android:hint="Type your quote here..."
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:enabled="false"
+                        android:inputType="textNoSuggestions|textCapSentences|textMultiLine"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/txt_color_normal"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_automatic_quote"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/logout_icon"
+                android:fontFamily="@font/teko_medium"
+                android:padding="@dimen/_15sdp"
+                android:text="Log Out"
+                android:textColor="#E74C3C"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

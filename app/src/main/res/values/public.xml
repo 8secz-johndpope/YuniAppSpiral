@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright 2016 Piruin Panichphol
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<resources>
+  <dimen name="quick_action_icon_size">24dp</dimen>
+  <dimen name="quick_action_arrow_width">15dp</dimen>
+  <dimen name="quick_action_arrow_height">5dp</dimen>
+  <dimen name="quick_action_corner">4dp</dimen>
+  <dimen name="quick_action_shadow_size">1dp</dimen>
+  <dimen name="quick_action_separator_width">1dp</dimen>
+  <color name="quick_action_shadow_color">#64000000</color>
+
+  <public name="quick_action_lib" type="string" />
+
+  <public name="define_QuickAction" type="string"/>
+  <public name="library_QuickAction_author" type="string"/>
+  <public name="library_QuickAction_authorWebsite" type="string"/>
+  <public name="library_QuickAction_libraryName" type="string"/>
+  <public name="library_QuickAction_libraryDescription" type="string"/>
+  <public name="library_QuickAction_libraryVersion" type="string"/>
+  <public name="library_QuickAction_libraryWebsite" type="string"/>
+  <public name="library_QuickAction_licenseId" type="string"/>
+  <public name="library_QuickAction_isOpenSource" type="string"/>
+  <public name="library_QuickAction_repositoryLink" type="string"/>
+  <public name="library_QuickAction_classPath" type="string"/>
+
+  <public name="quick_action_icon_size" type="dimen" />
+  <public name="quick_action_arrow_width" type="dimen" />
+  <public name="quick_action_arrow_height" type="dimen" />
+  <public name="quick_action_corner" type="dimen" />
+  <public name="quick_action_shadow_size" type="dimen" />
+  <public name="quick_action_separator_width" type="dimen" />
+  <public name="quick_action_shadow_color" type="color" />
+</resources>

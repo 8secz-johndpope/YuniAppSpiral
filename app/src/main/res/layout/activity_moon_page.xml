@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_bg"
+    tools:context=".activity.MoonPageActivity">
+
+    <ImageView
+        android:id="@+id/img_bottom_moon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-370dp"
+        android:src="@drawable/bottom_moon" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar_profile_img" />
+
+
+    <com.alexvasilkov.gestures.views.GestureFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        app:gest_doubleTapEnabled="false">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/layout_custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_middle_planet"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/middle_planet"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/teko_light"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Planet Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </com.alexvasilkov.gestures.views.GestureFrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/layout_week_selector"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/yello_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_left_round_solid">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="3 Hour"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Day"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Week"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Month"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+            <RelativeLayout
+                android:id="@+id/layout_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/teko_medium"
+                    android:text="Year"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/layout_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_week_selector"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_star_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/txt_planet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_navigation">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_50sdp"
+                android:paddingRight="@dimen/_50sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_do_stars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="New Moons"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <View
+                        android:id="@+id/view_do_stars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/txt_do_stars"
+                        android:layout_alignBottom="@+id/txt_do_stars"
+                        android:alpha="0.4"
+                        android:background="@drawable/drawable_splash_quote_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toRightOf="@+id/txt_do_stars"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_exceed_stars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="Past Due Moons"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <View
+                        android:id="@+id/view_exceed_stars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/txt_exceed_stars"
+                        android:layout_alignBottom="@+id/txt_exceed_stars"
+                        android:alpha="0.1"
+                        android:background="@drawable/drawable_splash_quote_bg" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/back_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_left_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+
+            <ImageView
+                android:id="@+id/img_unlaunched_moon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/new_moon_btn" />
+
+
+            <ImageView
+                android:id="@+id/img_archive_moon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_unlaunched_moon"
+                android:src="@drawable/archive_moons" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_add_moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layout_left_btns"
+            android:layout_alignRight="@+id/layout_left_btns"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/moon_page_add_btn" />
+
+        <View
+            android:id="@+id/view_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:visibility="gone" />
+
+
+        <!--PopupViews-->
+
+
+        <RelativeLayout
+            android:id="@+id/popup_unlaunched"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_left_btns"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_toRightOf="@+id/layout_left_btns"
+            android:background="@drawable/bg_date_time_popup"
+            android:elevation="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/teko_medium"
+                android:gravity="center"
+                android:text="@string/unlaunched_moons_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_unlaunched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_centerHorizontal="true" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_unlaunched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/popup_archived"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layout_left_btns"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_toRightOf="@+id/layout_left_btns"
+            android:background="@drawable/bg_date_time_popup"
+            android:elevation="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/txt_title_archive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/teko_medium"
+                android:gravity="center"
+                android:text="@string/archived_moons_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_archive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title_archive"
+                android:layout_centerHorizontal="true" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_archived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title_archive"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Youni</string>
+
+    <string name="facebook_app_id">2068055083281415</string>
+    <string name="fb_login_protocol_scheme">fb2068055083281415</string>
+    <!--On Boarding Screens-->
+    <string name="first_page_title">Manage Business</string>
+    <string name="first_page_subtitle">Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="second_page_title">Manage Personal</string>
+    <string name="second_page_subtitle">Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+
+    <string name="signup">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="how_it_works">How It Works</string>
+    <string name="tutorial_video">Tutorial Video</string>
+    <string name="login_title">Welcome, \nLog Into the app</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_with">Log in with</string>
+    <string name="signup_with">Signup with</string>
+    <string name="new_user">New User?</string>
+    <string name="register_now"><u>REGISTER NOW</u></string>
+
+
+    <string name="signup_title">Welcome, \nSign Up for the app</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="select_gender">Select gender</string>
+    <string name="done">Done</string>
+    <string name="skip">Skip</string>
+    <string name="add">Address</string>
+    <string name="agreement_text">By signing up, you will be agree to YOUNI</string>
+    <string name="tos">Terms of Services</string>
+    <string name="pp">Privacy Policy</string>
+    <string name="existing_user">Existing User? </string>
+    <string name="login_underline"><u>LOG IN</u></string>
+
+    <string name="reset_pass_title">Reset \nPassword</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="submit">Submit</string>
+
+    <string name="quote">\"I will finish what I start\"</string>
+    <string name="signup_quote">\"Manage Personal, Manage Business \nor Manage Both \nBecause Its Your Universe\"</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="notes">Notes</string>
+    <!--General-->
+    <string name="no_internet">Please check your internet connection or try again.</string>
+    <string name="dialog_title">Are you sure you want to Log Out?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="cant_empty">&#160;can not be empty.</string>
+    <string name="valid_email">Please enter valid email address.</string>
+    <string name="loading">Loading....</string>
+    <string name="pls_wait">Please Wait</string>
+    <string name="pls_click_back_again">Please click BACK again to exit.</string>
+    <string name="some_went_wrong">Something went wrong.</string>
+    <string name="valid_pass">Please enter 6 characters long password.</string>
+    <string name="valid_agreement">Please agree to our Terms of Services and Privacy Policy.</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="password_not_match">New Password and Confirm Password are not matching.</string>
+    <string name="phone_not_fb">Your FB account is not registered with Email account.Please do that</string>
+
+    <string name="unlaunched_stars_title">New Stars waiting \nfor dates</string>
+    <string name="archived_stars_title">Old Stars</string>
+    <string name="unlaunched_planets_title">New Plantes waiting \nfor dates</string>
+    <string name="archived_plantes_title">Old Planets</string>
+    <string name="unlaunched_moons_title">New Moons waiting \nfor dates</string>
+    <string name="archived_moons_title">Old Moons</string>
+    <string name="unlaunched_satellites_title">New Satellites waiting \nfor dates</string>
+    <string name="archived_satellites_title">Old Satellites</string>
+    <string name="unlaunched_comets_title">New Comets waiting \nfor dates</string>
+    <string name="archived_comets_title">Old Comets</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <string name="dialog_delete_title">Are you sure you want to delete?</string>
+
+    <string name="action_search">Search</string>
+    <string name="search_hint">Search here…</string>
+
+
+    <!--Bipin-->
+    <string name="agora_app_id">b2267eb1eca94d5ca3fa24b31cffbca0</string>
+    <string name="onboarding_design">Onboarding Design</string>
+    <string name="msg_connection_error">Connection Error</string>
+</resources>

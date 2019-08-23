@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.LoginActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:src="@drawable/new_logo" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gif_logo"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_user"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_img"
+                app:riv_oval="true" />
+
+            <EditText
+                android:id="@+id/edt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_user"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edittext_border_selector"
+                android:drawableRight="@drawable/calendar_icon"
+                android:fontFamily="@font/teko_medium"
+                android:hint="@string/dob"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <EditText
+                android:id="@+id/edt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_dob"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edittext_border_selector"
+                android:drawableRight="@drawable/caret_icon"
+                android:fontFamily="@font/teko_medium"
+                android:hint="@string/select_gender"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/drawable_bg_button"
+                android:fontFamily="@font/teko_medium"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/txt_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_done"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_medium"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/skip"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

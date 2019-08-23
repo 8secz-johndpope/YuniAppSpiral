@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ValidateCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp"
+            android:src="@drawable/back_icon" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_tool"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_pass_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <EditText
+                android:id="@+id/edt_enter_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/edittext_border_selector"
+                android:fontFamily="@font/teko_medium"
+                android:hint="Code"
+                android:imeOptions="actionDone"
+                android:maxLength="6"
+                android:inputType="number"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_25sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_enter_code"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Please enter your received code. After submitting your code you can reset your password."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/drawable_bg_button"
+                android:fontFamily="@font/teko_medium"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

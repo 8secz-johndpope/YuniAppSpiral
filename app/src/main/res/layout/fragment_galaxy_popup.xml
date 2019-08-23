@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/popup_galaxy"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_date_time_popup"
+
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/txt_galaxy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/teko_medium"
+            android:gravity="center"
+            android:text="Galaxy Stars"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_galaxy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_galaxy_title"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

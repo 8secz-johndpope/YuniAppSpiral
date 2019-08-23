@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntroActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/intro_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   />
+
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:ci_drawable="@drawable/filled_onboard_dot"
+        app:ci_drawable_unselected="@drawable/filled_onboard_dot"
+        android:layout_above="@+id/layout_btns"/>
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_bg_button"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Next"/>
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_how_it_works"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_button"
+            android:fontFamily="@font/teko_medium"
+            android:text="@string/how_it_works"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"/>
+
+        <TextView
+            android:id="@+id/txt_tutorial_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_button"
+            android:fontFamily="@font/teko_medium"
+            android:text="@string/tutorial_video"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

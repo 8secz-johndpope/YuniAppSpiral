@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_bg"
+    tools:context=".activity.DetailPageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar_home" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <TextView
+            android:id="@+id/txt_entity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Enity Name"
+            android:fontFamily="@font/teko_medium"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_entity_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date:  "
+                    android:textColor="#B4BFE0"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apr 24, 19"
+                    android:fontFamily="@font/teko_medium"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finish Date:"
+                    android:textColor="#B4BFE0"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txt_finish_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apr 24, 19"
+                    android:fontFamily="@font/teko_medium"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_dates"
+            android:layout_centerHorizontal="true"
+            android:text="(Priority 4)"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="#B4BFE0"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:id="@+id/layout_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_priority"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_documents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Documets"
+                android:drawableLeft="@drawable/documents_icon"
+                android:drawablePadding="@dimen/_4sdp"
+                android:textColor="@color/colorAccent"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:drawableLeft="@drawable/notes_icon"
+                android:drawablePadding="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txt_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Members"
+                android:drawableLeft="@drawable/member_icon"
+                android:drawablePadding="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/layout_btns"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#7880C1" />
+
+        <RelativeLayout
+            android:id="@+id/layout_entity_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/view_divider">
+
+            <ImageView
+                android:id="@+id/img_entity_type"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/middle_planet"/>
+        <TextView
+            android:id="@+id/txt_entity_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/teko_medium"
+            android:layout_toRightOf="@+id/img_entity_type"
+            android:text="Planets"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_planets_list"
+            android:layout_below="@+id/layout_entity_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:listitem="@layout/adapter_entities_details"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

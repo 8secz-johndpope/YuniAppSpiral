@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:id="@+id/layout_planet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_planet"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:src="@drawable/planet_storage" />
+
+        <TextView
+            android:id="@+id/txt_planet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_planet"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_ver"
+        android:layout_width="0.5dp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_below="@+id/layout_planet"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:background="@android:color/white" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_planet"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:visibility="gone"
+        android:nestedScrollingEnabled="false"/>
+</RelativeLayout>

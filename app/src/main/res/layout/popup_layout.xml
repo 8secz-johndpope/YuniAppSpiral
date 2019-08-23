@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_bg_popup"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_planet"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/middle_planet" />
+
+        <TextView
+            android:id="@+id/messageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/teko_medium"
+            android:text="@string/onboarding_design"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="03:24 PM"
+            android:textColor="@color/colorBlackTransparnet"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bodyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayout"
+        android:layout_alignLeft="@id/topLayout"
+        android:fontFamily="@font/opensans_regular"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="You have successfully added a planet."
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp" />
+</RelativeLayout>

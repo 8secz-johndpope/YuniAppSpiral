@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_bg"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".activity.StarStorageActivity">
+    <ImageView
+        android:id="@+id/img_bottom_moon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-370dp"
+        android:src="@drawable/bottom_moon" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar_home" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/img_star"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:visibility="invisible"
+                android:src="@drawable/star_storage" />
+
+
+            <TextView
+                android:id="@+id/txt_star_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/img_star"
+                android:fontFamily="@font/teko_medium"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/layout_storage">
+
+            <View
+                android:id="@+id/view_ver"
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:background="@android:color/white" />
+
+
+            <View
+                android:id="@+id/view_hor"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="0.5dp"
+                android:layout_alignBottom="@+id/view_ver"
+                android:layout_toRightOf="@+id/view_ver"
+                android:background="@android:color/white" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_planet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_storage"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:nestedScrollingEnabled="false"
+            android:layout_toRightOf="@+id/layout_views" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
